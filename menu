@@ -290,7 +290,7 @@ def boxplot1(dataset):
 
 
 def main(dataset=None):
-    print("Buongiorno e benvenuti nel programma di Daniele e Nicolas.\n\n")
+    print("Buongiorno e benvenuti nel programma di Daniele.\n\n")
 
     dataset_path = None
 
