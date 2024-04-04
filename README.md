@@ -1,36 +1,39 @@
-<h1 align="center">Analisi del Mercato dei Computer Portatili</h1>
+# Laptop Price Analysis
 
-<p align="center">
-  <b>Progetto sviluppato durante il primo anno di università</b>
-</p>
+## Author
+- Daniele Panizzolo - Department of Statistical Sciences, University of Padua, Italy.
 
-## 📚 Descrizione
-Questo progetto si concentra sull'analisi del mercato dei computer portatili, con l'obiettivo di comprendere le tendenze dei consumatori e le scelte dei componenti attraverso l'esplorazione dei dati disponibili.
+## Abstract
+This project focuses on analyzing the laptop market to gain a general understanding of trends and consumer choices regarding components. Utilizing principal libraries such as Pandas, Numpy, and Matplotlib, I implemented graphs and tables to examine the data. The workbook contains two CSV files, one for training and one for testing, aiming to develop a model that performs well on both datasets.
 
-## 🛠️ Funzionalità
-- Utilizza le potenti librerie Pandas, NumPy e Matplotlib per analizzare e visualizzare i dati.
-- Include due file CSV per il training e il testing dei modelli.
-- Implementa grafici e tabelle per esaminare i dati e trarre conclusioni significative.
+## Requirements Analysis
+- The analysis ensures the import of the two datasets into our folder as soon as we start our program; it will ask which dataset we want to operate on.
+- The program provides functionalities to access data exploration and to see the related information of the chosen dataset.
+- The system supports statistical data analysis, including calculations of median, mode, variance, standard deviation, correlation, and covariance, and allows graphical display of many important pieces of information related to our dataset with bar charts and pie charts.
+- The program's execution time can be viewed by importing the "time" module.
 
-## 📂 Struttura del Repository
-- **/data**: Contiene i file CSV utilizzati per l'analisi.
-- **/src**: Contiene il codice sorgente del progetto, incluso il notebook Jupyter utilizzato per l'analisi.
-- **/.gitignore**: File per specificare i file da ignorare durante il versionamento con Git.
-- **LICENSE**: Licenza del progetto.
-- **README.md**: Questo file, che fornisce una panoramica del progetto e delle sue funzionalità.
+## Project Implementation
+The main steps of the program's implementation with frequent comments in the code for better understanding include:
+- Necessary library imports: `os` for interacting with the operating system, `pandas` for data manipulation and analysis, `numpy` for mathematical operations on arrays, `matplotlib.pyplot` for creating charts, `sklearn` for training linear regression models and calculating evaluation metrics, `pyfiglet` for creating artistic text (at the end of the program session), `seaborn` for creating advanced statistical charts (such as Boxplot).
+- Definition of the main menu and "statistical menu", where the main menu contains the program's main options, and the statistical menu shows options for specific analyses.
+- Implementation of functions for managing user choices, loading data, and information display, and handling specific analysis choices. Functions for displaying charts such as pie charts and diagrams were also included.
+- `main()`: The main function that manages the program flow.
 
-## 🔧 Requisiti
-- Python 3
-- Librerie Python: Pandas, NumPy, Matplotlib
+## Conclusions and Results Evaluation
+The analysis provided a general overview of the dataset and relevant information about the manufacturers, prices, categories, and RAM capacity of the considered laptops. This analysis allowed me to acquire deep knowledge of the laptop market and consumer preferences in terms of component choices, representing an important contribution to better understanding the context and formulating possible future recommendations or strategies based on the analyzed data.
 
-## 💻 Utilizzo
-1. Clona il repository sul tuo computer.
-2. Assicurati di avere installate le librerie Python necessarie.
-3. Esegui il notebook Jupyter presente nella cartella /src per visualizzare e analizzare i dati.
-4. Senti libero di modificare e adattare il codice secondo le tue esigenze.
+## Future Developments and Improvements
+There are definitely wide margins for improvement in this project. Further implementations could include more precise and significant charts, such as scatter plots or heat maps, and efforts to make the code more concise and efficient. I maximized the resources provided by Professor Zennaro, which have been of great help in using the Pandas, Numpy, and Matplotlib libraries. I have also delved into computational complexity and included my program's execution time. Another fundamental aspect of my code was error and exception management, crucial for ensuring accurate data analysis.
 
-## 🤝 Contributi
-Se desideri contribuire a questo progetto, non esitare a inviare pull request o a segnalare problemi tramite le issues.
+## Acknowledgments
+I extend my deepest thanks to the Professor for his kind attention and hope that my work meets his expectations.
 
-## 📜 Licenza
-Questo progetto è distribuito con licenza [MIT](LICENSE).
+## Bibliography and Sources Used
+To finalize my project, I researched various instructions and functionalities of different libraries through many web resources like:
+- [Exploratory Data Analysis with Python and Pandas](https://www.diariodiunanalista.it/posts/analisi-esplorativa-dei-dati-con-python-e-pandas/)
+- [Explore and Analyze Data with Python - Microsoft](https://learn.microsoft.com/it-it/training/modules/explore-analyze-data-with-python/)
+- [Laptop Price Prediction Dataset on Kaggle](https://www.kaggle.com/datasets/arnabchaki/laptop-price-prediction)
+- [Python Data Science Handbook by Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+## License
+This project is distributed under the [MIT License](LICENSE).
